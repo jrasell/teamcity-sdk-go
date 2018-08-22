@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Cardfree/teamcity-sdk-go/types"
+	"github.com/jrasell/teamcity-sdk-go/types"
 )
 
 // Client to access a TeamCity API
@@ -86,7 +86,7 @@ func (c *Client) SearchBuild(locator string) ([]*types.Build, error) {
 }
 
 func (c *Client) GetBuild(buildID string) (*types.Build, error) {
-	path := fmt.Sprintf("/httpAuth/app/rest/%s/builds/id:%s?fields=*,tags(tag),triggered(*),properties(property),problemOccurrences(*,problemOccurrence(*)),testOccurrences(*,testOccurrence(*)),changes(*,change(*))", c.version, buildID)
+	path := fmt.Sprintf("/httpAuth/app/rest/%s/builds/id:%s?fields=*,triggered(*),properties(property),problemOccurrences(*,problemOccurrence(*)),testOccurrences(*,testOccurrence(*)),changes(*,change(*))", c.version, buildID)
 	var build *types.Build
 
 	err := withRetry(c.retries, func() error {

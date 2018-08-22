@@ -3,7 +3,7 @@ package teamcity
 import (
 	"fmt"
 
-	"github.com/Cardfree/teamcity-sdk-go/types"
+	"github.com/jrasell/teamcity-sdk-go/types"
 )
 
 func (c *Client) GetAgentPoolById(pool int) (*types.AgentPools, error) {

@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cardfree/teamcity-sdk-go/types"
+	"github.com/jrasell/teamcity-sdk-go/types"
 )
 
 var host = flag.String("host", "localhost", "hostname to test against")

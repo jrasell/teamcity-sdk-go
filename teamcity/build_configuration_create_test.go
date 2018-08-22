@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cardfree/teamcity-sdk-go/types"
+	"github.com/jrasell/teamcity-sdk-go/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

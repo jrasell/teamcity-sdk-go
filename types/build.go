@@ -58,8 +58,6 @@ type Build struct {
 		TestOccurrence []TestOccurrence
 	}
 
-	Tags []string `json:"tags,omitempty"`
-
 	Properties Properties `json:"properties"`
 }
 

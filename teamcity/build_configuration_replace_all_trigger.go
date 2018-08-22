@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/Cardfree/teamcity-sdk-go/types"
+	"github.com/jrasell/teamcity-sdk-go/types"
 )
 
 func (c *Client) ReplaceAllBuildConfigurationTriggers(buildConfID string, triggers *types.BuildTriggers) error {

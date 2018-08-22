@@ -275,7 +275,6 @@ func (c *Client) doNotJSONRequest(method string, path string, accept string, mim
 	authURL := fmt.Sprintf("%s%s%s", prefix, host, path)
 
 	log.Printf("%s %s\n", method, authURL)
-	fmt.Printf("%s %s\n", method, authURL)
 
 	req, _ := http.NewRequest(method, authURL, body)
 	req.SetBasicAuth(c.username, c.password)
